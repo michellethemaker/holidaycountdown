@@ -9,8 +9,8 @@ int Fns::countdown(int weekday) {
   
   TimeElements launch;
   TimeElements today;
-  launch.Day = 31;
-  launch.Month = 10;
+  launch.Day = 12;
+  launch.Month = 12;
   launch.Year = CalendarYrToTm(2023);
   today.Day = myRTC.getDate();
   today.Month = myRTC.getMonth(century);
@@ -42,7 +42,7 @@ int Fns::countdown(int weekday) {
 void Fns::LEDnumbers(int num, int section){ //section: num of leds to skip to get to the next '7segment'
 
 uint8_t brightness = 255;
-CRGB color = CRGB::DarkOrange; //DeepPink;
+CRGB color = CRGB::DeepPink; //;DarkOrange
 CRGB black = CRGB::Black;
 
 switch(num){
@@ -90,15 +90,12 @@ case 3:
 
 case 4:
   leds[0+section] = color;
-  for (int i = 2; i <=6; i++)
-          {
-            leds[i+section] = color;
-          }
   for (int i = 4; i <=6; i++)
           {
             leds[i+section] = color;
           }
-    for (int i = 10; i <=12; i++)
+
+    for (int i = 8; i <=12; i++)
           {
             leds[i+section] = color;
           }

@@ -1,5 +1,6 @@
 # holidaycountdown
-Simple countdown with two WS2812B 7-segments 
+Simple countdown with two WS2812B 7-segments.
+This was a simple exercise for me to practice project management, code encapsulation, and enclosure building.
 
 libraries used: 
 
